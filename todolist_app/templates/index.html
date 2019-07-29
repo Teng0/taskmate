@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{%  load static %}
+
+    {% block title %}
+        <title>მთავარი- TaskMate </title>
+    {% endblock %}
+
+{% block content %}
+      <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-4"><img src="{% static 'images/stickynote.jpg' %}" alt="image" class="rounded-lg shadow " width="360" height="250" ></div>
+            <div class="col-lg-4"><img src="{% static 'images/stickynote.jpg' %}" alt="image" class="rounded-lg shadow " width="360" height="250" ></div>
+            <div class="col-lg-4"><img src="{% static 'images/stickynote.jpg' %}" alt="image" class="rounded-lg shadow "  width="360" height="250" ></div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-10 offset-md-1">
+
+               <center> <p class="h1">მარტივი და ადვილად გამოყენებადი ყველგან და ყოველთვის</p></center>
+                 <center><p class="h2">დაგეგმე შენი დღე უკეთესად , გახდი უფრო პუნქტუალური</p></center>
+                 <center><p class="h5">აპლიკაცია დაგეხმარება რომ თვლასაჩინოთ ხედავდე შენი დღის ამოცანებს</p></center>
+                <center> <a class="nav-link" href="{% url 'todolist' %}"><button type="button" class="btn btn-primary btn-lg mt-3 shadow ">დაწყება</button></a></center>
+             </div>
+        </div>
+      </div>
+  {% endblock %}
